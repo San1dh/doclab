@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>GFG- Store Data</title>
+      <style>
+      .a {
+         white-space: nowrap; 
+         width: 200px; 
+         height: 40px;
+         overflow: visible;
+         text-overflow: ellipsis;
+         border: 1px solid #000000;
+       }
+       
+       .a:hover {
+         overflow: visible;
+       }
+
+       form  { display: table;      }
+       p     { display: table-row;  }
+       label { display: table-cell; }
+       input { display: table-cell; }
+       </style>
+   </head>
+   
+   <!-- <body style="background-color: #6F54E0; margin: 50px 650px 50px 650px;"> -->
+      <body style="background-image: url('https://wallpaperaccess.com/full/1282794.jpg'); background-size: 2000px 800px; background-repeat: no-repeat;">
+         <h1>Enter Patient Details</h1>
+         <form action="insert.php" method="post" style="color:black; border: 4px solid blue; border-radius: 4px; padding:10px">
+             
+          <p>
+               <label for="first_name">First Name:</label>
+               <input type="text" name="first_name" id="firstName">
+          </p>
+          <br>
+          <p>
+               <label for="last_name">Last Name:</label>
+               <input type="text" name="last_name" id="lastName">
+          </p>
+          <br>
+           <p>
+               <label for="Gender">Gender:</label>
+               <input type="text" name="gender" id="Gender">
+          </p>
+           <br>
+           <p>
+               <label for="Address">Address:</label>
+               <input type="text" name="address" id="Address">
+          </p>
+           <br>
+           <p>
+               <label for="emailAddress">Email Address:</label>
+               <input type="text" name="email" id="emailAddress">
+            </p>
+            <br>     
+            <p>
+               <label for="health_issue_description">Health Issue Description:</label>
+               <input type="text" name="health_issue_description" id="health_issue_description" class="a">
+            </p>
+            <br>
+            <input type="submit" value="Submit">
+         </form>
+   </body>
+</html>
